@@ -5,13 +5,16 @@ public class Funcionario {
     private String cpf;
     private String nome;
     private int idade;
+    private int diasTrabalhados;
 
 
-    public Funcionario(float salario, String cpf, String nome, int idade) {
+
+    public Funcionario(float salario, String cpf, String nome, int idade, int diasTrabalhados) {
         this.idade = idade;
         this.cpf = cpf;
         this.nome = nome;
         this.salario = salario;
+        this.diasTrabalhados = diasTrabalhados;
     }
 
     public void setSalario(float salario) {
@@ -44,6 +47,12 @@ public class Funcionario {
 
     public int getIdade() {
         return idade;
+    }
+        public void setDiasTrabalhados(int diasTrabalhados) { 
+        this.diasTrabalhados = diasTrabalhados; 
+    }
+    public int getDiasTrabalhados() { 
+        return diasTrabalhados;
     }
 
 }
